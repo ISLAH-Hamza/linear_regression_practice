@@ -59,8 +59,6 @@ data_train= cbind(data_train[featursName],SalePrice=data_train$SalePrice)
 
 
 
-#removing outlires
-
 model<-linear_reg() %>% set_engine("lm") %>% set_mode("regression")
 dataModel<-data_train
 Rsquared=0
